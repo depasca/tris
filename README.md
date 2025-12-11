@@ -1,6 +1,6 @@
 # Tris
 
-A simple command-line Tic-Tac-Toe game in Python.
+Educational: a simple command-line Tic-Tac-Toe game in Python to introduce coding to kids. 
 
 ## Features
 
