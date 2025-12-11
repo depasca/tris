@@ -23,11 +23,12 @@ class Board:
         return ''.join(self.board)
 
     def __str__(self) -> str:
-        return f"{self.board[0]} | {self.board[1]} | {self.board[2]}\n" \
-               f"--+---+--\n" \
-               f"{self.board[3]} | {self.board[4]} | {self.board[5]}\n" \
-               f"--+---+--\n" \
-               f"{self.board[6]} | {self.board[7]} | {self.board[8]}"
+        return f"    A   B   C\n\n" \
+               f"1   {self.board[0]} | {self.board[1]} | {self.board[2]}\n" \
+               f"   -----------\n" \
+               f"2   {self.board[3]} | {self.board[4]} | {self.board[5]}\n" \
+               f"   -----------\n" \
+               f"3   {self.board[6]} | {self.board[7]} | {self.board[8]}\n"
 
 
 if __name__ == "__main__":

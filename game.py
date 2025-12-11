@@ -1,4 +1,5 @@
 import os
+import sys
 from board import Board
 
 
@@ -20,7 +21,17 @@ def play():
     while turn <= 9:
         os.system("clear")
         print(board)
-        move = input(f"{player} place your mark: ")
+        move = input(f"{player} place your mark (press ESC to quit): ")
+        
+        # Check if ESC was pressed (ESC character is \x1b)
+        if move == "\x1b":
+            confirmation = input("Are you sure you want to quit? (y/n): ").lower()
+            if confirmation == "y":
+                print("Quitting game!")
+                return
+            else:
+                continue
+        
         board.mark(move, player)
         os.system("clear")
         print(board)
