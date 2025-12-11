@@ -121,7 +121,7 @@ while turn <= 9:
         continue
     draw()
     if checkTris(move):
-        print(f"{player} ha vinto!")
+        print(f"{player} is the winner!")
         exit(0)
 
     if player == "X":
@@ -130,4 +130,4 @@ while turn <= 9:
         player = "X"
 
 
-print("pareggio!")
+print(" it's a draw!")
